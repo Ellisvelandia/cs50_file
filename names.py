@@ -5,3 +5,8 @@
 
 #   for name in sorted(names):
 #     print(f"hello, {name}")
+name = input("whats youe name? ")
+
+file = open("names.txt", "a")
+file.write(name)
+file.close()
