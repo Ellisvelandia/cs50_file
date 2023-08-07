@@ -13,10 +13,10 @@ with open("students.csv") as file:
         # student["house"] = house
         students.append(student)
 
-def get_name(student):
-    return student["house"]
+# def get_name(student):
+#     return student["house"]
     
-for student in sorted(students, key=get_name):
+for student in sorted(students, key=lambda student: student["name"]):
     print(f"{student['name']} is in {student['house']}")        
 #     students.append(f"{name} is in {house}")
 
